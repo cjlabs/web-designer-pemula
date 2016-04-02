@@ -18,8 +18,8 @@
 <body>
   <section class="page-header">
     <div class="container">
-      <div class="col-md-4"></div>
-      <div class="col-md-8 text-left text black">
+      <div class="col-md-5"></div>
+      <div class="col-md-7 text-left text dark">
 
         <h2 class="project-tagline">Bagian Pertama</h2>
         <h1 class="project-name">WEB DESIGNER UNTUK PEMULA</h1><hr/>
@@ -30,7 +30,7 @@
           </p>
           <p>
             tidak lupa di akhir sesi ada final project, diharapkan setelah kursus ini selesai anda bisa membuat web design yang bagus dan sesuai dengan kriteria-kriteria web design yang bagus
-          </p>
+          </p> <br/>
           <a href="https://github.com/cjlabs/web-designer-pemula" class="btn btn-default"><i class="fa fa-list-alt"></i>  Daftar</a>
           <a href="https://github.com/cjlabs/web-designer-pemula/tarball/master" class="btn btn-default"><i class="fa fa-newspaper-o"></i> Contoh Final Project</a>
         </div>
@@ -78,6 +78,79 @@
         </div>
       </section>
 
+      <section class="materi text dark">
+        <div class="container-fluid ">
 
+        <h2 class="text-center">MATERI</h2>
+    
+        <ul id="accordion" class="accordion">
+          <li>
+            <div class="link"><i class="fa fa-database"></i>Perkenalan<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Photoshop</a></li>
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link"><i class="fa fa-code"></i>Panduan penggunaan tools<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Javascript</a></li>
+              <li><a href="#">jQuery</a></li>
+              <li><a href="#">Ruby</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link"><i class="fa fa-mobile"></i>Komponen web design<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Tablet</a></li>
+              <li><a href="#">Mobile</a></li>
+              <li><a href="#">Desktop</a></li>
+            </ul>
+          </li>
+          <li>
+            <div class="link"><i class="fa fa-globe"></i>Final project<i class="fa fa-chevron-down"></i></div>
+            <ul class="submenu">
+              <li><a href="#">Google</a></li>
+              <li><a href="#">Bing</a></li>
+              <li><a href="#">Yahoo</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+      </section>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script>
+      $(function() {
+      	var Accordion = function(el, multiple) {
+      		this.el = el || {};
+      		this.multiple = multiple || false;
+
+      		// Variables privadas
+      		var links = this.el.find('.link');
+      		// Evento
+      		links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
+      	}
+
+      	Accordion.prototype.dropdown = function(e) {
+      		var $el = e.data.el;
+      			$this = $(this),
+      			$next = $this.next();
+
+      		$next.slideToggle();
+      		$this.parent().toggleClass('open');
+
+      		if (!e.data.multiple) {
+      			$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
+      		};
+      	}
+
+      	var accordion = new Accordion($('#accordion'), false);
+      });
+      </script>
     </body>
+
+
     </html>
