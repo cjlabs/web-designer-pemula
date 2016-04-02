@@ -1,0 +1,11 @@
+section{
+  margin: 0px;
+  padding:10px;
+}
+
+section.grey{
+  background-color: #E8E8E8;
+}
+
+
+.text.black{color:black;}
