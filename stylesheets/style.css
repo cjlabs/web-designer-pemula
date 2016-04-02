@@ -3,9 +3,33 @@ section{
   padding:10px;
 }
 
+
+.info .title, .info .sub-title{
+  margin: 0px;
+}
+.info{
+  padding-top:20px;
+}
+.info .sub-title{
+  font-size:10pt;
+}
+section.info.icon{
+  display:table;
+}
+section.info.title{
+  display:table-cell;
+  vertical-align:middle;
+}
+section.info.row{
+  display:table;
+}
+
 section.grey{
   background-color: #E8E8E8;
 }
 
 
 .text.black{color:black;}
+.text.light{color:white;}
+
+.bg.dark{background: #262626;}
