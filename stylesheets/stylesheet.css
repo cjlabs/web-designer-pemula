@@ -59,7 +59,9 @@ a {
 
 @media screen and (max-width: 42em) {
   .project-name {
-    font-size: 2.75rem; } }
+    font-size: 4.75rem;
+	font-weight: 800;
+ } }
 
 .project-tagline {
 
