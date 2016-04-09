@@ -195,3 +195,120 @@ footer #bottom .footer-social-icons li a:hover i {
   background-color: #009AC0;
   color: #fff;
 }
+
+
+#preloader {
+    background: #262626;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 100000;
+    top: 0;
+}
+
+#preloader .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+#preloader .txt-perc {
+    font-size: 4em;
+    font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+    opacity: 1;
+    margin: 0 0 6px 0;
+    margin-top: 45px;
+    max-width: 400px;
+    text-align: center; }
+#preloader .progress {
+    width: 100px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 auto 15px auto; }
+#preloader .progress span {
+    display: block;
+    width: 0;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); }
+#preloader.is-hidden {
+    visibility: hidden;
+    opacity: 0; }
+
+
+
+
+    #loader {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        animation: 2s linear 0s normal none infinite running spin;
+        border-color: #3498db transparent transparent;
+        border-image: none;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 3px;
+        display: block;
+        height: 150px;
+        left: 50%;
+        margin: -75px 0 0 -75px;
+        position: relative;
+        top: 50%;
+        width: 150px;
+    }
+    #loader::before {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        animation: 3s linear 0s normal none infinite running spin;
+        border-color: #e74c3c transparent transparent;
+        border-image: none;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 3px;
+        bottom: 5px;
+        content: "";
+        left: 5px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+    #loader::after {
+        -moz-border-bottom-colors: none;
+        -moz-border-left-colors: none;
+        -moz-border-right-colors: none;
+        -moz-border-top-colors: none;
+        animation: 1.5s linear 0s normal none infinite running spin;
+        border-color: #f9c922 transparent transparent;
+        border-image: none;
+        border-radius: 50%;
+        border-style: solid;
+        border-width: 3px;
+        bottom: 15px;
+        content: "";
+        left: 15px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+    .ir {
+        background-color: transparent;
+        border: 0 none;
+        overflow: hidden;
+    }
+    .ir::before {
+        content: "";
+        display: block;
+        height: 150%;
+        width: 0;
+    }
