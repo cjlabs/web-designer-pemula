@@ -17,6 +17,45 @@ a {
     text-decoration: underline; }
 
 
+
+    .map_area {
+      position: relative;
+      margin-top: 80px;
+    }
+
+
+.map_area #map{
+  height: 580px;
+    z-index: 1;
+}
+
+
+.map_area .map_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.map_area .map_info .map_address {
+  background-color: #00aeda;
+  padding: 50px 30px;
+  border-radius: 4px;
+  margin-top: 90px;
+  position: relative;
+  z-index: 2;
+}
+
+.map_area .map_info .map_address p {
+  color: #94e9ff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-top: 25px;
+}
+
+
 .page-header {
   margin: 0px;
   color: #fff;
@@ -55,7 +94,10 @@ a {
 
 @media screen and (min-width: 42em) and (max-width: 64em) {
   .project-name {
-    font-size: 2.25rem; } }
+    font-size: 2.25rem;
+    font-size: 5rem;
+    font-weight: 800;
+    } }
 
 @media screen and (max-width: 42em) {
   .project-name {

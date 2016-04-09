@@ -17,14 +17,6 @@
   <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
 
   <!-- google analytic code -->
- 	<script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
- 	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
- 	      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-   ga('create', 'UA-75499958-1', 'auto');
-     ga('send', 'pageview');
- 	</script>
 
 </head>
 <body>
@@ -140,7 +132,24 @@
 
 
 	  <section class="contact">
-		  this is contact section containing map and info
+      <div class="map_area">
+          <div id="map"></div>
+          <div class="map_info">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="col-md-5">
+                              <div class="map_address">
+                                  <h3>CJLABS LEARNING CENTER</h3>
+                                  <p> Jl. P. Puger 3 No 21, Maguwoharjo, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta </p>
+                                      <a href="https://goo.gl/jKzcho" class="btn btn-default">get direction</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 	  </section>
 
 <footer>
@@ -187,8 +196,12 @@
 
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="assets/js/switcher.js"></script>
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.22"></script>
+<script src="assets/js/map.js"></script>
 <script>
       $(function() {
+
+
       	var Accordion = function(el, multiple) {
       		this.el = el || {};
       		this.multiple = multiple || false;
