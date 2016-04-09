@@ -6,6 +6,7 @@ body {
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-family: 'Lato', sans-serif;
+  font-family:'Roboto', Helvetica, Helvetica Neue, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #606c71; }
@@ -39,11 +40,16 @@ a {
 
 .map_area .map_info .map_address {
   background-color: #FFFFFF;
-  padding: 50px 30px;
+  padding: 40px 30px;
   border-radius: 4px;
   margin-top: 80px;
   position: relative;
   z-index: 2;
+}
+
+.map_area .map_info .map_address h3{
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
 }
 
 .map_area .map_info .map_address p {
