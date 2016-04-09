@@ -15,6 +15,7 @@
 - [x] add accordion for list of web design material
 
 ## ENCHANCMENT
+- [todo] add preloader
 
 
 ## CUSTOMIZATION
