@@ -20,12 +20,11 @@ a {
 
     .map_area {
       position: relative;
-      margin-top: 80px;
     }
 
 
 .map_area #map{
-  height: 580px;
+  height: 400px;
     z-index: 1;
 }
 
@@ -39,16 +38,16 @@ a {
 }
 
 .map_area .map_info .map_address {
-  background-color: #00aeda;
+  background-color: #FFFFFF;
   padding: 50px 30px;
   border-radius: 4px;
-  margin-top: 90px;
+  margin-top: 80px;
   position: relative;
   z-index: 2;
 }
 
 .map_area .map_info .map_address p {
-  color: #94e9ff;
+  color: #000000;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;

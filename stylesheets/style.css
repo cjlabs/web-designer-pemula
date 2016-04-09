@@ -173,3 +173,25 @@ footer #bottom .footer-social-icons li a i {
 footer #bottom .footer-social-icons li a:hover i {
 
 }
+
+.btn_one, .btn_two, .btn_three, .btn_four, .btn_four:active, .btn_four:focus, .btn_four:hover, .btn_four:visited, .btn_three:active, .btn_three:visited, .btn_three:focus, .btn_two:active, .btn_two:visited, .btn_two:focus, .btn_two:hover, .btn_three:hover, .btn_one:active, .btn_two:active, .btn_three:active, .btn_four:active, .btn_one:visited, .btn_two:visited, .btn_three:visited, .btn_four:visited, .btn_one:focus, .btn_two:focus, .btn_three:focus, .btn_four:focus {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: #00aeda;
+  padding: 18px 30px;
+  border-radius: 4px;
+  border: 0;
+  text-transform: uppercase;
+  box-shadow: none;
+  outline: 0 !important;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn_one:hover, .btn_two:hover, .btn_three:hover, .btn_four:hover {
+  background-color: #009AC0;
+  color: #fff;
+}
