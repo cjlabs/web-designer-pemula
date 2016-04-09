@@ -16,6 +16,7 @@
 
 ## ENCHANCMENT
 - [x] add preloader
+- [ ] add course selector
 
 
 ## CUSTOMIZATION
