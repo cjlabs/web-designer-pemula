@@ -17,7 +17,8 @@
 ## ENCHANCMENT
 - [x] add preloader
 - [ ] add course selector
-
+- [ ] change directory structure to front end standard
+- [x] use gulp for build
 
 ## CUSTOMIZATION
 - [x] add theme customization panel
