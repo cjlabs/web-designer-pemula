@@ -9,7 +9,11 @@ var config = require('./gulp.config.json');
 var inject = require('gulp-inject');
 
 
-    gulp.task('vendorcss', function(){
+gulp.task('connect', function() {
+      connect.server();
+});
+
+gulp.task('vendorcss', function(){
         return gulp
         // set source
         .src(config.paths.vendorcss)
@@ -20,7 +24,7 @@ var inject = require('gulp-inject');
         .pipe(gulp.dest(config.paths.dest));
     });
 
-    gulp.task('customcss', function(){
+gulp.task('customcss', function(){
         return gulp
         // set source
         .src(config.paths.customcss)
@@ -69,4 +73,4 @@ gulp.task('customjs', function(){
 
 
 
-gulp.task('default', []);
+gulp.task('default', ['connect']);
