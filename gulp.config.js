@@ -7,7 +7,7 @@ var developmentAssets = 'build/assets';
 var productionAssets  = 'build/production/assets';
 
 var paths  = {
-            "client": "src/client/",
+        "client": "src/client/",
         "server": "src/server/",
         "dest":"dist/",
         "vendorcss": [
@@ -24,5 +24,22 @@ var paths  = {
         "customjs":[
             "src/js/**/*.js"
             ]
-    }
+}
 
+
+module.exports = {
+  browsersync: {
+  development: {
+    server: {
+    baseDir: [development, build, src]
+  },
+  port: 9999,
+files: [
+developmentAssets + '/css/*.css',
+   developmentAssets + '/js/*.js',
+   developmentAssets + '/images/**',
+   developmentAssets + '/fonts/*'
+ ]
+ }
+   }
+};

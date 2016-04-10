@@ -17,7 +17,7 @@ gulp.task('connect', function() {
 /**
  *  * Run the build task and start a server with BrowserSync
  *   */
-gulp.task('browsersync', ['build'], function() {
+gulp.task('browsersync', function() {
       browsersync(config);
 });
 
