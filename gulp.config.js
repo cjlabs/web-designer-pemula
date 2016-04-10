@@ -1,6 +1,13 @@
-{
-    "paths": {
-        "client": "src/client/",
+var src               = 'app';
+var build             = 'build';
+var development       = 'build/development';
+var production        = 'build/production';
+var srcAssets         = 'app/_assets';
+var developmentAssets = 'build/assets';
+var productionAssets  = 'build/production/assets';
+
+var paths  = {
+            "client": "src/client/",
         "server": "src/server/",
         "dest":"dist/",
         "vendorcss": [
@@ -18,4 +25,4 @@
             "src/js/**/*.js"
             ]
     }
-}
+

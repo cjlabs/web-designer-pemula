@@ -5,12 +5,20 @@ var gulp = require('gulp'),
 var usemin = require('gulp-usemin');
 var uglify = require('gulp-uglify');
 var minifyCss = require('gulp-clean-css');
-var config = require('./gulp.config.json');
+var config = require('./gulp.config.js');
 var inject = require('gulp-inject');
-
+var browsersync = require('browser-sync');
 
 gulp.task('connect', function() {
       connect.server();
+});
+
+
+/**
+ *  * Run the build task and start a server with BrowserSync
+ *   */
+gulp.task('browsersync', ['build'], function() {
+      browsersync(config);
 });
 
 gulp.task('vendorcss', function(){
@@ -71,6 +79,13 @@ gulp.task('customjs', function(){
     .pipe(gulp.dest(config.paths.dest));
 });
 
+
+/**
+ *  * Start browsersync task and then watch files for changes
+ *   */
+gulp.task('watch', ['browsersync'], function() {
+
+});
 
 
 gulp.task('default', ['connect']);
