@@ -22,7 +22,7 @@ var paths  = {
             "src/css/**/*.css"    
         ],
         "customjs":[
-            "src/js/**/*.js"
+            "src/js/*.js"
             ]
 }
 

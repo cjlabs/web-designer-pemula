@@ -75,7 +75,7 @@ var gulp = require('gulp'),
 	gulp.task('customjs', function(){
 		return gulp
 		// set source
-		.src(config.paths.vendorjs)
+		.src(config.paths.customJs)
 		//              // write to vendor.min.js
 		.pipe(concat('custom.min.js'))
 		//                              // start tracking size
