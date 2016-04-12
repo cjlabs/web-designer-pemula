@@ -8,7 +8,7 @@ var gulp = require('gulp'),
 	var config = require('./gulp.config.js');
 	var inject = require('gulp-inject');
 	var browsersync = require('browser-sync');
-
+    var changed = require('gulp-changed');
 	gulp.task('connect', function() {
 		connect.server();
 	});
@@ -89,6 +89,12 @@ var gulp = require('gulp'),
 		.pipe(gulp.dest(config.paths.dest));
 	});
 
+
+	gulp.task('images',function(){
+ return gulp.src(config.paths.images.src)
+     .pipe(changed(config.paths.images.dest)) // Ignore unchanged files
+	     .pipe(gulp.dest(config.paths.images.dest));
+});
 
 /**
  *  * Start browsersync task and then watch files for changes

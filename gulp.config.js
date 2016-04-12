@@ -1,10 +1,11 @@
-var src               = 'app';
+var src               = 'src';
 var build             = 'build';
 var development       = 'build/development';
 var production        = 'build/production';
-var srcAssets         = 'app/_assets';
+var srcAssets         = 'src';
 var developmentAssets = 'build/assets';
-var productionAssets  = 'build/production/assets';
+var productionAssets  = 'dist';
+var dist			  = 'dist';
 
 var paths  = {
         "client": "src/client/",
@@ -23,7 +24,11 @@ var paths  = {
         ],
         "customjs":[
             "src/js/*.js"
-            ]
+            ],
+		"images":{ 
+		  src:  src+'/images/**/*',
+		  dest: dist + '/images'
+		}
 }
 
 
