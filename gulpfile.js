@@ -21,4 +21,10 @@ var gulp = require('gulp'),
 		}));
 	});
 
+
+	gulp.task('copyfonts', function() {
+		   gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}')
+		      .pipe(gulp.dest('./dist/fonts'));
+	});
+
 	gulp.task('default', ['connect']);
