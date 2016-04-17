@@ -4,7 +4,7 @@ var development       = 'build/development';
 var production        = 'build/production';
 var distribution	  = 'dist';
 var srcAssets         = 'src';
-var developmentAssets = 'build/assets';
+
 var productionAssets  = 'build/production/assets';
 
 module.exports = {
@@ -15,16 +15,21 @@ module.exports = {
 			},
 			port: 9999,
 			files: [
-				developmentAssets + '/css/*.css',
-				developmentAssets + '/js/*.js',
-				developmentAssets + '/images/**',
-				developmentAssets + '/fonts/*'
+				srcAssets + '/css/*.css',
+				srcAssets + '/js/*.js',
+				srcAssets + '/images/**',
+				srcAssets + '/fonts/*'
 			]
 		}
 	},
 	images: {
 		src:  src + '/img/**/*',
 		dest: distribution + '/img'
+	},
+	fonts:{
+		files :[
+			'./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}'
+		]
 	},
 	watch: {
 		sass:    srcAssets + '/scss/**/*.{sass,scss}',
@@ -33,5 +38,10 @@ module.exports = {
 		images:  srcAssets + '/img/**/*',
 		sprites: srcAssets + '/img/**/*.png',
 		svg:     'vectors/*.svg'
+	},
+	vendors:{
+		files :[
+			'node_modules/bootstrap/dist/**/*'	
+		]
 	}
 };
