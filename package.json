@@ -20,6 +20,7 @@
     "gulp-usemin": "^0.3.22",
     "gulp-webserver": "^0.9.1",
     "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
     "vue": "^1.0.21"
   },
   "scripts": {
