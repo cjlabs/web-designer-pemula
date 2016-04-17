@@ -1,7 +1,8 @@
-var src               = 'app';
+var src               = 'src';
 var build             = 'build';
 var development       = 'build/development';
 var production        = 'build/production';
+var distribution	  = 'dist';
 var srcAssets         = 'src';
 var developmentAssets = 'build/assets';
 var productionAssets  = 'build/production/assets';
@@ -22,8 +23,8 @@ module.exports = {
 		}
 	},
 	images: {
-		src:  srcAssets + '/images/**/*',
-		dest: developmentAssets + '/images'
+		src:  src + '/img/**/*',
+		dest: distribution + '/img'
 	},
 	watch: {
 		sass:    srcAssets + '/scss/**/*.{sass,scss}',
