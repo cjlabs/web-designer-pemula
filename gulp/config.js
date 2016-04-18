@@ -29,11 +29,12 @@ module.exports = {
 	fonts:{
 		files :[
 			'./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}'
-		]
+		],
+        build : distribution  + '/fonts/'
 	},
 	watch: {
         fonts: srcAssets + '/fonts/**/*.{ttf,woff,eof,svg}',
-		sass:    srcAssets + '/scss/**/*.{sass,scss}',
+		sass:   srcAssets + '/scss/**/*.{sass,scss}',
 		css: srcAssets + '/css/**/*.css',
 		scripts: srcAssets + '/js/**/*.js',
 		images:  srcAssets + '/img/**/*',
