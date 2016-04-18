@@ -27,6 +27,7 @@ a {
 .map_area #map{
   min-height: 400px;
     z-index: 1;
+    background:black;
 }
 
 
@@ -42,7 +43,7 @@ a {
   background-color: #FFFFFF;
   padding: 40px 30px;
   border-radius: 4px;
-  margin-top: 80px;
+  margin-top: 500px;
   position: relative;
   z-index: 2;
 }

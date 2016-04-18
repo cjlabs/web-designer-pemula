@@ -32,6 +32,7 @@ module.exports = {
 		]
 	},
 	watch: {
+        fonts: srcAssets + '/fonts/**/*.{ttf,woff,eof,svg}',
 		sass:    srcAssets + '/scss/**/*.{sass,scss}',
 		css: srcAssets + '/css/**/*.css',
 		scripts: srcAssets + '/js/**/*.js',

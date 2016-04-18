@@ -14,9 +14,3 @@ var requireDir = require('require-dir');
 requireDir('./gulp/tasks', { recurse: true });
 
 
-gulp.task('copyfonts', function() {
-	   gulp.src('./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}')
-      .pipe(gulp.dest('./dist/fonts'));
-});
-	
-	
