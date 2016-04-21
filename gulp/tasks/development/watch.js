@@ -7,5 +7,5 @@ var config = require('../../config').watch;
 gulp.task('watch', ['webserver'], function() {
 	gulp.watch(config.fonts ['build:fonts']);
 	gulp.watch(config.images,  ['images']);
-    gulp.watch(config.css, ['build:css']);	
+    gulp.watch(config.css, ['build:css']);
 });

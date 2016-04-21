@@ -2,8 +2,8 @@ var src               = 'src';
 var build             = 'build';
 var development       = 'build/development';
 var production        = 'build/production';
-var distribution	  = 'dist';
-var srcAssets         = 'src';
+var distribution	  = './dist';
+var srcAssets         = './src';
 var vendors           = './node_modules';
 var productionAssets  = 'build/production/assets';
 
@@ -39,7 +39,7 @@ module.exports = {
 	},
     css:{
       files:[],
-      dest :distribution + '/css/'
+      dest :distribution 
     },
 	watch: {
         fonts: srcAssets + '/fonts/**/*.{ttf,woff,eof,svg}',
