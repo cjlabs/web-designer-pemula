@@ -216,7 +216,7 @@ footer #bottom .footer-social-icons li a:hover i {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
 #preloader .txt-perc {
-    font-size: 4em;
+    font-size: em;
     font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
     opacity: 1;
     margin: 0 0 6px 0;

@@ -4,10 +4,15 @@ var development       = 'build/development';
 var production        = 'build/production';
 var distribution	  = 'dist';
 var srcAssets         = 'src';
-
+var vendors           = './node_modules';
 var productionAssets  = 'build/production/assets';
 
 module.exports = {
+    paths:{
+        src : src,
+        dist :distribution,
+        vendor : vendors
+    } ,
 	browsersync: {
 		development: {
 			server: {
@@ -30,8 +35,12 @@ module.exports = {
 		files :[
 			'./node_modules/font-awesome/fonts/**/*.{ttf,woff,eof,svg}'
 		],
-        build : distribution  + '/fonts/'
+        dest : distribution  + '/fonts/'
 	},
+    css:{
+      files:[],
+      dest :distribution + '/css/'
+    },
 	watch: {
         fonts: srcAssets + '/fonts/**/*.{ttf,woff,eof,svg}',
 		sass:   srcAssets + '/scss/**/*.{sass,scss}',
@@ -43,7 +52,8 @@ module.exports = {
 	},
 	vendors:{
 		files :[
-			'node_modules/bootstrap/dist/**/*'	
-		]
+			'node_modules/bootstrap/dist/'
+		],
+        dest : srcAssets
 	}
 };
